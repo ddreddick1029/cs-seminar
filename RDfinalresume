@@ -1,0 +1,246 @@
+%-------------------------
+% Resume in Latex
+% Author : Diavantae' (Dee) Reddick
+% Based off of: https://github.com/sb2nov/resume @ Overleaf
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Diavantae' Reddick} \\ \vspace{1pt}
+    Boone, North Carolina \\ \vspace{1pt}
+    \small \href{tel:(336)558-2862}{ \raisebox{-0.1\height}\faPhone\ \underline{(336)-558-2862} ~} \href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{reddickd@appstate.edu}} ~ 
+    \href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{diavantae-reddick}}  ~
+    \href{https://github.com/yourid}{\raisebox{-0.2\height}\faGithub\ \underline{ddreddick1029}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Appalachian State University}{Expected May 2023}
+      {Master of Science in Computer Science- \textbf{3.0}  \textbf{}}{Boone, North Carolina}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Campbell University}{August 2017-- May 2021}
+     {Bachelor of Science in Info. Tech. Security \& Management- \textbf{3.3}  \textbf{}}{Buies Creek, North Carolina}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{\underline{Senior Project: Hospital Management System}}} {}} $|$ \href{https://github.com/yourid}{\raisebox{-0.2\height}\faGithub\ } \large{\underline{}}}{ January 2021 --- May 2021}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Creation} of a dynamic database management system that aimed to securely store patient data, employee credentials, and create transactional logs.}}
+            \resumeItem{\normalsize{\textbf{Developed} and ran usability tests to create a satisfactory end user experience.}}
+            \resumeItem{\normalsize{\textbf{Utilized} Atom, PHP, SQL, HTML/CSS.}}
+          \resumeItemListEnd
+          
+       \resumeProjectHeading
+          {\href{ProjectLink.com}{\textbf{\large{\underline{Wrestling Timer \& Scoreboard}}} } $|$ \href{https://github.com/yourid}{\raisebox{-0.2\height}\faGithub\ } }{December 2019 --- March 2020}
+          \resumeItemListStart
+            \resumeItem{\normalsize{\textbf{Implemented} OOP elements including polymorphism, encapsulation, and recursion.}}
+             \resumeItem{\normalsize{\textbf{Deployed} application to simulate mock competition for the NCAA tournament in the practice room. }}
+              \resumeItem{\normalsize{\textbf{Collaborated} with team members and end users while emphasizing extreme programming principles. }}
+              \resumeItem{\normalsize{\textbf{Utilized} Eclipse, JavaFX, \& UML Diagramming. }}
+          \resumeItemListEnd 
+          
+          \vspace{-13pt}
+    \resumeSubHeadingListEnd
+   \vspace*{2.0\multicolsep}
+
+%
+
+
+%-----------EXPERIENCE-----------
+
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Appalachian State University  }{June 2021 - Present} 
+      {\underline{Technology Support Technician}}{Boone, North Carolina}
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Resolves} hardware and software issues for multiple departments throughout the Appalachian State campus.}}
+        \resumeItem{\normalsize{\textbf{Organizes} and \textbf{submits} reports consisting of detailed, quality logs of completed tasks.}}
+        \resumeItem{\normalsize{\textbf{Serves} as a daily liaison between end users and system personnel.}}
+        \resumeItem{\normalsize{\textbf{Building} a reputation for working with previously unhappy clients.}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Python, Java, JavaScript, SQL, XML, \LaTeX, ChoiceScript, }} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, Eclipse, Atom, Sublime, Vim, PyCharm}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{\normalsize{ Linux, GitHub, ReactJS, VueJS, NodeJS, Git, Bootstrap, Nuxt.js}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{EXTRACURRICULAR}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Appalachian State University | Wrestling Team }{August 2021 -- Present}{\underline{Team Member}}{Boone, North Carolina}
+            \resumeItemListStart
+                \resumeItem{\normalsize{ \textbf{Represents} the Appalachian State Mountaineers in the Southern Conference.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+    \resumeSubheading{Campbell University| Wrestling Team }{August 2017 -- May 2021}{\underline{Team Member}}{Buies Creek, North Carolina}
+            \resumeItemListStart
+                \resumeItem{\normalsize{ \textbf{Represented} the Campbell University Fighting Camels in twenty Division I collegiate matches.}}
+                \resumeItem{\normalsize{ \textbf{Achieved} the Academic Southern Conference Honor Roll for two consecutive semesters.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+\end{document}
